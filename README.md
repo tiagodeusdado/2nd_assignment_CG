@@ -30,7 +30,7 @@ O sistema carrega e renderiza modelos 3D poligonais em formato Wavefront `.obj` 
 
 ---
 
-## 3. Elementos Extras Implementados (Até 20 Pontos de Bónus)
+## 3. Elementos Extras Implementados
 
 1. **Skybox Atmosférico Procedural:** Cúpula celeste com gradiente de altitude (zénite azul profundo até ao horizonte claro) e disco solar brilhante com dispersão de luz.
 2. **Balizamento e Luzes de Pista (*Runway Lights*):**
