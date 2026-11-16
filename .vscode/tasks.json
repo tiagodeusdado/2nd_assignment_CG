@@ -1,0 +1,51 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "Build Flight Simulator",
+            "command": "C:/msys64/ucrt64/bin/g++.exe",
+            "args": [
+                "-std=c++17",
+                "-O2",
+                "-DGLEW_STATIC",
+                "-I${workspaceFolder}/deps/glfw-3.3.8.bin.WIN64/include",
+                "-I${workspaceFolder}/deps/glew-2.2.0/include",
+                "-I${workspaceFolder}/deps/glm",
+                "-I${workspaceFolder}/src",
+                "${workspaceFolder}/src/main.cpp",
+                "${workspaceFolder}/src/Shader.cpp",
+                "${workspaceFolder}/src/Model.cpp",
+                "${workspaceFolder}/src/FlightSimulator.cpp",
+                "${workspaceFolder}/src/SceneExtras.cpp",
+                "${workspaceFolder}/deps/glew-2.2.0/src/glew.c",
+                "-L${workspaceFolder}/deps/glfw-3.3.8.bin.WIN64/lib-mingw-w64",
+                "-lglfw3",
+                "-lopengl32",
+                "-lgdi32",
+                "-luser32",
+                "-lshell32",
+                "-o",
+                "${workspaceFolder}/bin/flight_sim.exe"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": ["$gcc"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "type": "shell",
+            "label": "Build and Run",
+            "command": "${workspaceFolder}/build.bat",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [],
+            "group": "test"
+        }
+    ]
+}
