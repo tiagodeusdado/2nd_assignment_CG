@@ -51,7 +51,7 @@ O sistema carrega e renderiza modelos 3D poligonais em formato Wavefront `.obj` 
 
 ### Câmaras em $\mathbb{R}^3$:
 * `1`: **Chase Camera** (Câmara de perseguição em 3ª pessoa — segue o caça suavemente durante a aceleração e descolagem; arrastar com botão direito roda em torno do avião).
-* `2`: **Free Fly Camera (Estilo CS2 / FPS)** (O cursor do rato fica capturado no centro da janela, permitindo rotação $360^\circ$ infinita e contínua em qualquer direção sem bater nas bordas do ecrã; premir `TAB` para libertar/recapturar o cursor).
+* `2`: **Free Fly Camera** (O cursor do rato fica capturado no centro da janela, permitindo rotação $360^\circ$ infinita e contínua em qualquer direção sem bater nas bordas do ecrã; premir `TAB` para libertar/recapturar o cursor).
 * `3`: **Cockpit Camera** (Câmara em 1ª pessoa no interior da cabine do caça).
 * `4`: **Tower Camera** (Câmara fixa na torre de controlo que acompanha (*tracking*) o caça ao longo da pista).
 * `SHIFT`: Sprint / Aceleração de deslocamento em modo Free Fly Camera.
